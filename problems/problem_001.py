@@ -16,6 +16,9 @@ def minimum_value(value1, value2):
     elif value1 == value2:
         return value1
 
+print(minimum_value(1,2))
+print(minimum_value(3000,4000))
+print(minimum_value(1,1))
 
 """
 or
@@ -25,10 +28,3 @@ if value2 < value1:
     return value1
 return value 1
 """
-
-
-
-#test code
-print(minimum_value(1,2)) # should print 1
-print(minimum_value(3000,4000)) #should also print 1
-print(minimum_value(1,1)) # should also print 1
