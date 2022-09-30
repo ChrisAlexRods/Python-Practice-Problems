@@ -9,4 +9,26 @@
 # problem to get a good feel for how to solve it.
 
 def minimum_value(value1, value2):
-    pass
+    if value1 < value2:
+        return value1
+    if value2 < value1:
+        return value2
+    elif value1 == value2:
+        return value1
+
+
+"""
+or
+if value <= value2:
+    return value1
+if value2 < value1:
+    return value1
+return value 1
+"""
+
+
+
+#test code
+print(minimum_value(1,2)) # should print 1
+print(minimum_value(3000,4000)) #should also print 1
+print(minimum_value(1,1)) # should also print 1
