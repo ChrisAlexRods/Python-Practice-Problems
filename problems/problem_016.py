@@ -8,5 +8,6 @@ def is_inside_bounds(x, y):
     else:
         return "not inclusive"
 
-print(is_inside_bounds(0,10))
-print(is_inside_bounds(30,29))
+
+print(is_inside_bounds(0, 10))
+print(is_inside_bounds(30, 29))

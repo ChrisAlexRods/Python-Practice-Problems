@@ -15,10 +15,13 @@ bad_list = ["flour", "eggs", "fish"]
 
 
 def can_make_pasta(ingredients):
-    if ("flour" in ingredients and "eggs" in ingredients and "oil" in ingredients):
+    if ("flour" in ingredients
+        and "eggs" in ingredients
+        and "oil" in ingredients):
         return True
     else:
         return False
+
 
 print(can_make_pasta(list))
 print(can_make_pasta(bad_list))

@@ -8,5 +8,6 @@ def has_quorum(attendees_list, members_list):
     else:
         return False
 
+
 print(has_quorum(100, 250))
 print(has_quorum(100, 50))

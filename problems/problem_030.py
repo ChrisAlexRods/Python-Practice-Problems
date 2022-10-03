@@ -12,4 +12,12 @@
 # problem to get a good feel for how to solve it.
 
 def find_second_largest(values):
-    pass
+    if len(values) <= 1:
+        return None
+    largest = [0]
+    second_largest = [0]
+
+    for value in values:
+        if value > largest:
+            second_largest = largest
+            largest = value

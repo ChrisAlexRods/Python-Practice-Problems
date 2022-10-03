@@ -17,5 +17,6 @@ def is_divisible_by_3(x):
     else:
         return x
 
+
 print(is_divisible_by_3(20))
 print(is_divisible_by_3(9))
