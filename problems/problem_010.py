@@ -10,5 +10,12 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
-def is_divisible_by_3(number):
-    pass
+
+def is_divisible_by_3(x):
+    if x % 3 == 0:
+        return "fizz"
+    else:
+        return x
+
+print(is_divisible_by_3(20))
+print(is_divisible_by_3(9))

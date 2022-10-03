@@ -16,8 +16,13 @@ def minimum_value(value1, value2):
     elif value1 == value2:
         return value1
 
+
 print(minimum_value(1,2))
+
+
 print(minimum_value(3000,4000))
+
+
 print(minimum_value(1,1))
 
 """

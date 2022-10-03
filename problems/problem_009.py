@@ -13,4 +13,10 @@
 # problem to get a good feel for how to solve it.
 
 def is_palindrome(word):
-    pass
+    reverse_list = reversed(word)
+    reversed_word = "".join(reverse_list)
+    if reversed_word == word:
+        return True
+    else:
+        return False
+print(is_palindrome("civic"))

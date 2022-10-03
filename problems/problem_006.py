@@ -16,4 +16,4 @@ def can_skydive(age, has_consent_form):
         print("come back when you're older")
 
 
-print(can_skydive(15,True))
+print(can_skydive(15, True))
