@@ -13,4 +13,4 @@
 # like ".isalpha", ".isdigit", ".isupper", and ".islower"
 
 def check_password(password):
-    pass
+    has_lowercase_letter = False

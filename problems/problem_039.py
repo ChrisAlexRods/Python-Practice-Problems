@@ -13,4 +13,8 @@
 #     output: {1: "one", 2: "two", 3: "three"}
 
 def reverse_dictionary(dictionary):
-    pass
+    new_diction = {y:x for x,y in dictionary.items()}
+    return new_diction
+
+my_dict = {1: 'apple', 2: 'ball'}
+print(reverse_dictionary(my_dict))

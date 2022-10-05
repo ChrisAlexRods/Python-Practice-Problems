@@ -23,7 +23,7 @@ class Animal:
         return(self.__class__.__name__+
         "has"
         + str(self.number_of_legs
-        +"legs and is primarily"
+        +"legs and is primarily" 
         +self.primary_color))
 
 first_animal = Animal(4, "blue")

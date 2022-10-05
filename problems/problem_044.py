@@ -17,5 +17,17 @@
 #
 # Remember that a dictionary has the ".get" method on it.
 
+key_list = ["name", "age", "dog"]
+dictionary = {"name": "Noor", "age": 29}
+
 def translate(key_list, dictionary):
-    pass
+    result = []
+    for key in key_list:
+        if key in dictionary:
+            get_value = dictionary.get(key)
+            result.append(get_value)
+        else:
+            result.append(None)
+    return result
+
+print(translate(key_list, dictionary))

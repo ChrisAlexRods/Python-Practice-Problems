@@ -14,10 +14,14 @@
 def find_second_largest(values):
     if len(values) <= 1:
         return None
-    largest = [0]
-    second_largest = [0]
-
+    largest = values[0]
+    second_largest = values[0]
     for value in values:
         if value > largest:
-            second_largest = largest
+            second_largest = value
             largest = value
+        elif value > second_largest:
+            second_largest = value
+        return second_largest
+list = []
+print(find_second_largest(["22", "444", "11"]))

@@ -14,4 +14,15 @@
 #   * Generate all the numbers that are divisible by 5
 #     and 7 into a list
 #   * Use random.choice to select one
+import random
 
+def specific_random():
+    numbers = range(10, 500)
+    lst = []
+
+    for number in numbers:
+        if number % 5 == 0 and number % 7 == 0:
+            lst.append(number)
+    return random.choice(lst)
+
+print(specific_random())

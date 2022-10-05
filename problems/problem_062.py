@@ -22,4 +22,22 @@
 #       result:  120
 #     * inputs:  10, "/", 12
 #       result:  0.8333333333333334
+#before we even start. You need to get better at evualiting the parameters and understanding the question before starting
+# almost made a super complicated calcualter
+def basic_calculater(left, op, right):
+    #becuase we're given three parameters. One of which being the oeprator. We can isoalte it and change our code around it
+    # Becuasse we're not looping, we  can identify the 4 possible operators and make the op == string
+    #so if we repeat the process
+    if op == "+":
+        return left + right
+    if op == "-":
+        return left - right
+    if op == "*":
+        return left * right
+    if op == "/":
+        return left / right
 
+print(basic_calculater(10 , "+", 5))
+print(basic_calculater(10 , "-", 5))
+print(basic_calculater(10 , "*", 5))
+print(basic_calculater(10 , "/", 5))

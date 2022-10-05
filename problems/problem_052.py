@@ -14,4 +14,11 @@
 # package.
 #
 # https://docs.python.org/3/library/random.html
+import random
 
+def generate_lottery_numbers():
+    numbers = list(range(1,41))
+    random.shuffle(numbers)
+    return numbers[0:6]
+
+print(generate_lottery_numbers())

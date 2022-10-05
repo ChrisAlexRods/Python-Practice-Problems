@@ -16,4 +16,11 @@
 #       result: 97 because from 3 to 100 is the biggest gap
 #
 # You may want to look at the built-in "abs" function
+numbers = [1, 3, 5, 7]
 
+def biggest_gap(numbers):
+    lst = []
+    for number in range(len)
+
+
+    return lst

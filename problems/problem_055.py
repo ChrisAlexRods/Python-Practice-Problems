@@ -27,4 +27,23 @@
 #       returns: "IX"
 #     * input: 10
 #       returns:  "X"
-
+def simple_roman(value):
+    #This is suppsoed to be a dictionary question. When a user input a number you use a dictionary
+    #to idetify the key, then pull the nubmer out
+    roman_dictionary = {
+        1: "I",
+        2: "II",
+        3: "III",
+        4: "IV",
+        5: "IV",
+        6: "V",
+        7: "VI",
+        8: "VIII",
+        9: "IX",
+        10: "X"
+    }
+    return roman_dictionary[value]
+#When you return the dictionary you need the [] to specifiy what you want the input to be for the dictioanry
+# if you don't the print statement prints the entire dictionary.
+#
+print(simple_roman(4))

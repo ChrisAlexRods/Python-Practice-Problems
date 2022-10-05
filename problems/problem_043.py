@@ -18,6 +18,20 @@
 #     result:       [0, 2, 4]
 #
 # Look up the enumerate function to help you with this problem.
+search_list = [1, 2, 3, 4, 5]
+search_term = 100
 
 def find_indexes(search_list, search_term):
-    pass
+    if search_term in search_list:
+        return True
+    else:
+        return False
+    
+    # """
+    # result = 0
+    # for value1 in (search_list):
+    #     if value1 ==  search_term:
+    #         result.append(value1)
+    # return result
+    # """
+print(find_indexes(search_list,search_term))

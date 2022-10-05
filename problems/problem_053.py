@@ -14,4 +14,10 @@
 #      returns: "basia.farid"
 #    * input:   "basia_farid+test@yahoo.com"
 #      returns: "basia_farid+test"
+email = "bobbyu@gmail"
+#We're using the parameter.split to single out a specific chracter that we want to tsplit the string
+#In our case we're splitting the "@" string to return the username
+def username_from_email(email):
+     return email.split("@")[0]
 
+print(username_from_email(email))
