@@ -22,10 +22,14 @@ class Book():
     def __init__(self, author,title):
         self.author = author
         self.title = title
-    
-    def get_author
-        
 
+    def get_author(self, author):
+        return "The author is" + " " + self.author
 
+    def get_title(self, title):
+        return "The title is" + " " + self.title
 
+HarryPotter = Book("JK Rowling", "Harry Potter")
 
+print(HarryPotter.get_author(HarryPotter))
+print(HarryPotter.get_title(HarryPotter))

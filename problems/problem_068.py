@@ -37,13 +37,14 @@
             # return True
         # otherwise
             # return None
-
+# define class with emty brackets
 class Person():
-    def __init__(self, name, hated_foods ,loved_foods):
+    #function sets the parameters
+    def __init__(self, name,hated_foods ,loved_foods):
         self.name = name
         self.hated_foods = hated_foods
         self.loved_foods = loved_foods
-
+# series of if statements asked above on whether the lists given have Bob's favorite food
     def taste(self, food):
         if food in self.hated_foods:
             return False
@@ -51,3 +52,11 @@ class Person():
             return True
         else:
             return "None"
+# arguably the hardest part
+#creating a varaible with a name, two lists seperated by commas.
+Malik = Person("Malik",["cottage cheese", "sauerkraut"],["pizza", "schnitzel"])
+#becuase ther's only one function we can pass the varaible through it as type in strigns to see
+#if any fall within the lists
+print(Malik.taste("lasagna"))     # Prints None, not in either list
+print(Malik.taste("sauerkraut"))  # Prints False, in the hated list
+print(Malik.taste("pizza"))       # Prints True, in the loved list

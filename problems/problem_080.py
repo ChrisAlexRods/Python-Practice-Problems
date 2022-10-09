@@ -35,3 +35,9 @@
 
     # method get_total(self)
         # return self.get_subtotal() * (1 + self.tax_rate)
+class Recipt():
+    def __init__(self, tax_rate, item):
+        self.tax_rate = tax_rate
+        self.item = item
+
+    def add_item(self, item):

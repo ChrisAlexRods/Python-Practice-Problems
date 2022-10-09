@@ -16,11 +16,16 @@
 #       result: 97 because from 3 to 100 is the biggest gap
 #
 # You may want to look at the built-in "abs" function
-numbers = [1, 3, 5, 7]
+numbers = [1, 11, 9, 20, 0]
+#don't entirely understand waht's happening. Espicially the logic
+def biggest_gap(nums):
+    max_gap = 0
+    #this is making it so the second number is subtracted from the first number. abs is making sure if the result is negattive
+    #then it is return as the "true value": the positive version of that number
+    for i in range(len(nums) - 1):
+        gap = abs(nums[i + 1] - nums[i])
+        if gap > max_gap:
+            max_gap = gap
+    return max_gap
 
-def biggest_gap(numbers):
-    lst = []
-    for number in range(len)
-
-
-    return lst
+print(biggest_gap(numbers))

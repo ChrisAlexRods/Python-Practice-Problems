@@ -13,5 +13,21 @@
 #    item = ReceiptItem(10, 3.45)
 #
 #    print(item.get_total())    # Prints 34.5
+class ReciptItem():
+    def __init__(self, quantity, price):
+        self.quantity = quantity
+        self.price = price
+
+    def item_amount(self):
+        return self.quantity
+
+    def price(self):
+        return self.price
+
+    def get_total(self):
+        return self.quantity * self.price
 
 
+item = ReciptItem(10, 3.45)
+
+print(item.get_total())

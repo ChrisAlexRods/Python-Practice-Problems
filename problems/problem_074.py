@@ -33,3 +33,34 @@
 
     # method deposit(self, amount)
         # increases the balance by the amount
+
+class BankAccount:
+    # You always start with the innit function. Determine the parameters for each function
+    #The function below only onyl estalbishes self.balance. It doesn't do anything else
+    def __init__(self, balance):
+        self.balance = balance
+
+#in order to get the actual return you have to make another function that returns the balance
+    def get_balance(self):
+        return self.balance
+#For withdrwa balance you have to refer to the first function
+#you also establish which paramters need to be added.
+#THE AMOUNT IS FOR THE INPUT FROM THE USER FOR DEPOSIT AND WITHDRAWING
+    def withdraw_balance(self, amount):
+        self.balance = self.balance - amount
+#For the deposit you als orefer to the same function
+# This time amoumnt will be used to add to the balance
+    def deposit_balance(self, amount):
+        self.balance = self.balance + amount
+
+
+
+account = BankAccount(100)
+
+print(account.get_balance())  # prints 100
+
+account.withdraw_balance(50)
+print(account.get_balance())  # prints 50
+
+account.deposit_balance(120)
+print(account.get_balance())  # prints 170
