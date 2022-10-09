@@ -14,6 +14,18 @@
 
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
+number = 15
+
 
 def fizzbuzz(number):
-    pass
+    if number % 3 == 0 and number % 5 == 0:
+        return "fizzbuzz"
+    elif number % 3 == 0:
+        return "fizz"
+    elif number % 5 == 0:
+        return "buzz"
+    else:
+        return number
+
+
+print(fizzbuzz(number))

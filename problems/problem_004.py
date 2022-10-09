@@ -11,6 +11,14 @@
 
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
+value1 = 23
+value2 = 44
+value3 = 67
+
 
 def max_of_three(value1, value2, value3):
-    pass
+    max_value = max(value1, value2, value3)
+    return max_value
+
+
+print(max_of_three(value1, value2, value3))

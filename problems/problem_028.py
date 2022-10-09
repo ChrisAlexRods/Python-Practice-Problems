@@ -9,6 +9,15 @@
 #   * For "abccbad", the result is "abcd"
 #
 # If the list is empty, then return the empty string.
+s = "abccba"
+
 
 def remove_duplicate_letters(s):
-    pass
+    lst = ""
+    for letter in s:
+        if letter not in lst:
+            lst = lst + letter
+    return lst
+
+
+print(remove_duplicate_letters(s))

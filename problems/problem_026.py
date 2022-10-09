@@ -11,6 +11,24 @@
 #   * A "D" for an average greater than or equal to 60
 #     and less than 70
 #   * An "F" for any other average
+values = [40, 90, 50]
+
 
 def calculate_grade(values):
-    pass
+    lst = 0
+    sum_values = sum(values)
+    lst = sum_values / len(values)
+
+    if lst >= 90:
+        return "A"
+    elif lst >= 80:
+        return "B"
+    elif lst >= 70:
+        return "C"
+    elif lst >= 60:
+        return "D"
+    elif lst >= 50:
+        return "F"
+
+
+print(calculate_grade(values))

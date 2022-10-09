@@ -7,6 +7,13 @@
 
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
+value1 = 10
+value2 = 7
+
 
 def minimum_value(value1, value2):
-    pass
+    minval = min(value1, value2)
+    return minval
+
+
+print(minimum_value(value1, value2))

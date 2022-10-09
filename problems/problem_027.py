@@ -3,6 +3,12 @@
 #
 # If the list is empty, then return None.
 #
+values = [30, 50, 45, 60, 56]
+
 
 def max_in_list(values):
-    pass
+    max_number = max(values)
+    return max_number
+
+
+print(max_in_list(values))

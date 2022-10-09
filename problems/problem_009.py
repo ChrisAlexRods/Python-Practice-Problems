@@ -11,6 +11,13 @@
 
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
+word = "racecar"
+
 
 def is_palindrome(word):
-    pass
+    rev = ''.join(reversed(word))
+    if word == rev:
+        return "This word is a palindrome"
+
+
+print(is_palindrome(word))

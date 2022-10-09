@@ -5,6 +5,12 @@
 # If the list of values is empty, the function should
 # return None
 #
+values = [1, 2, 3]
+
 
 def calculate_sum(values):
-    pass
+    sum_values = sum(values)
+    return sum_values
+
+
+print(calculate_sum(values))

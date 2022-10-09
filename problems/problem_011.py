@@ -6,6 +6,14 @@
 
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
+number = 20
+
 
 def is_divisible_by_5(number):
-    pass
+    if number % 5 == 0:
+        return "buzz"
+    else:
+        return number
+
+
+print(is_divisible_by_5(number))
